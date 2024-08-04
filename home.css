@@ -108,3 +108,52 @@ body
     grid-column: 1.;
     grid-row: 2;
 }
+
+footer
+{
+    background-color: rgb(191, 191, 191);
+    padding : 60px 250px 0px 250px
+}
+
+.brand
+{
+    display: flex;
+    height: 200px;;
+}
+
+.brand>h1
+{
+    padding-right:500px;
+    
+}
+
+.foot-svg
+{
+    margin-left:50px;
+    width: 150px;
+    height: 150px;
+}
+
+.foot
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+}
+
+.fo-one
+{
+    display: grid;
+
+}
+
+.fo-two
+{
+    display: grid;
+}
+
+.fo-three
+{
+    display: grid;
+}
