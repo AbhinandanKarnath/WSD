@@ -1,63 +1,56 @@
-body
-{
+body {
     background-color: black !important;
 }
 
-.hea
-{
+.hea {
     width: 100%;
     height: 70px;
     background-color: rgb(171, 76, 21);
     display: flex;
     padding-left: 25px;
-    border-radius: 0px 0px 30px 30px ;
+    border-radius: 0px 0px 30px 30px;
 }
 
-.hea>i
-{
+.hea>i {
     margin: 10px;
 }
 
-.hea>h1
-{
+.hea>h1 {
     padding: 10px 10px 0px 10px;
     color: white;
 }
 
-.carousel
-{
-    padding: 10px 350px 350px 200px;   
+.carousel {
+    /* padding: 10px 350px 350px 200px;   
     padding-top: 10px;
     padding-right: 350px;
     padding-left: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; */
+
+    padding: 30px 150px 20px 150px;
 }
 
-.tag
-{
+.tag {
     text-align: center;
     color: white;
     z-index: 3;
 }
 
-.d-block
-{
+.d-block {
     border-radius: 70px;
 
 }
 
-.products
-{
+.products {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 200px;
     padding: 50px;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     justify-content: space-around;
 }
 
-.product
-{
+.product {
     height: 120px;
     padding: 20px;
     /* background-color: blueviolet; */
@@ -67,93 +60,154 @@ body
     align-content: space-around;
 }
 
-.product:hover
-{
+.product:hover {
     transition: 500ms;
     transform: scale(1.1);
     border-radius: 30px;
     background-color: black;
 }
-.cato
-{
+
+.cato {
     transition: 100ms;
 }
 
-.product:hover .cato
-{
+.product:hover .cato {
     color: white;
 }
 
-.grids
-{
+.grids {
     /* width: 100%;
     height: 50px; */
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-    grid-auto-rows: minmax(100px,auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
     background-color: white;
     padding: 25px;
 }
 
-.item
-{
+.item {
     width: 50px;
     height: 50px;
     background-color: cadetblue;
 }
 
-.one
-{
+.one {
     grid-column: 1.;
     grid-row: 2;
 }
 
-footer
-{
+footer {
     background-color: rgb(191, 191, 191);
-    padding : 60px 250px 0px 250px
+    padding: 60px 250px 0px 250px
 }
 
-.brand
-{
+.brand {
     display: flex;
-    height: 200px;;
+    height: 200px;
+    ;
 }
 
-.brand>h1
-{
-    padding-right:500px;
-    
+.foot-head {
+    padding-right: 500px;
+
 }
 
-.foot-svg
-{
-    margin-left:50px;
+.foot-svg {
+    margin-left: 50px;
     width: 150px;
     height: 150px;
 }
 
-.foot
-{
+.foot {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding:10px;
+    padding: 10px;
 }
 
-.fo-one
-{
+.fo-one {
     display: grid;
 
 }
 
-.fo-two
-{
+.fo-two {
     display: grid;
 }
 
-.fo-three
-{
+.fo-three {
     display: grid;
+}
+
+@media screen and (max-width: 1000px)
+{
+
+    .carousel {
+        width: 100% ;
+        /* padding: 30px 50px 20px 50px; */
+        padding:30px;
+    }
+    .products
+    {
+        height: fit-content;
+    }
+
+    .footer{
+        padding-left:50px ;
+    }
+
+    .foot-head
+    {
+        margin-right: 100px;
+        padding:50px;
+    }
+
+    .foot-svg
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .foot{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .foot{
+        gap: 40px;
+    }
+
+    .carousel 
+    {
+        padding: 10px;
+
+    }
+    .products {
+        flex-direction: column;
+    }
+
+    .product {
+        height: fit-content;
+        text-align: center;
+    }
+
+
+    .foot-head
+    {
+        padding:10px;
+    }
+
+    footer {
+        padding: 60px 30px 0px 30px
+    }
+    
+}
+
+@media screen and (max-width: 600px)
+{
+    .foot{
+        gap: 30px;
+    }
 }
