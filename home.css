@@ -7,7 +7,7 @@ body
 {
     width: 100%;
     height: 70px;
-    background-color: rgb(176, 23, 23);
+    background-color: rgb(171, 76, 21);
     display: flex;
     padding-left: 25px;
     border-radius: 0px 0px 30px 30px ;
@@ -26,7 +26,18 @@ body
 
 .carousel
 {
-    padding: 10px 200px 200px 200px;   
+    padding: 10px 350px 350px 200px;   
+    padding-top: 10px;
+    padding-right: 350px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+.tag
+{
+    text-align: center;
+    color: white;
+    z-index: 3;
 }
 
 .d-block
@@ -41,24 +52,36 @@ body
     width:100%;
     height: 200px;
     padding: 50px;
-    background-color: wheat;
+    background-color: rgb(255,255,255);
     justify-content: space-around;
 }
 
 .product
 {
-    width: 85px;
     height: 120px;
     padding: 20px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 10px;
     transition: 500ms;
+    display: grid;
+    align-content: space-around;
 }
 
 .product:hover
 {
     transition: 500ms;
     transform: scale(1.1);
+    border-radius: 30px;
+    background-color: black;
+}
+.cato
+{
+    transition: 100ms;
+}
+
+.product:hover .cato
+{
+    color: white;
 }
 
 .grids
